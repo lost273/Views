@@ -13,6 +13,7 @@ namespace Views
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new DebugDataViewEngine());
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
